@@ -5,84 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Notes for Web Developnment</title>
-    <style>
-        body {
-            background-color: rgb(220, 220, 212);
-        }
-
-        * {
-            padding: 10px;
-            margin: 3px;
-        }
-
-        .commands h1 {
-            color: rgb(38, 31, 90);
-            font-style: italic;
-        }
-
-        .commands li h3 {
-            color: rgba(0, 0, 0, 0.815);
-            font-style: oblique;
-        }
-
-        .website h1 {
-            color: rgb(38, 31, 90);
-            font-style: italic;
-        }
-
-        .website li h3 {
-            color: rgba(0, 0, 0, 0.815);
-            font-style: oblique;
-        }
-
-        .website ol li {
-            font-family: Arial, Helvetica, sans-serif;
-            padding: 15px;
-            margin: 13px;
-        }
-
-        .api h1 {
-            color: rgb(38, 31, 90);
-            font-style: italic;
-        }
-
-        .api li h3 {
-            color: rgba(0, 0, 0, 0.815);
-            font-style: oblique;
-        }
-
-        .js h1 {
-            color: rgb(38, 31, 90);
-            font-style: italic;
-        }
-    </style>
+   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-   <div class="commands">
-    <h1>Git Commands</h1>
-    <ol>
-        <li><h3>git add- used to adds a file to the staging area.</h3></li>
-        <li><h3>git init- used to start a new repository.</h3></li>
-        <li><h3>git clone- used to obtain a repository from an existing URL.</h3></li>
-        <li><h3>git commit- used to commit any files you have added with the git add command and also commits any file you have changed.</h3></li>
-        <li><h3>git status- used to lists all the files that have to be committed.</h3></li>
-        <li><h3>git branch- used to lists all the local branches in the current repository.</h3></li>
-        <li><h3>git push- used to sends the committed changes of master branch to your remote repository. </h3></li>
-        <li><h3>git config- used to set the author name and email address respectively to be used with your commits.</h3></li>
-    </ol>
-   </div>
-   <div class="website">
-    <h1>Website</h1>
-    <ul>
-        <li><h3>A website is a collection of web pages and related content that is identified by a common domain name. </h3></li>
+    <div class="website">
+        <h1>Website</h1>
+        <ul>
+            <li><h3>A website is a collection of web pages and related content that is identified by a common domain name. </h3></li>
             <li><h3>A protocol is a set of rules for formatting and processing data.</h3>Types of protocol:-</li>
-        <ol> <li>TCP(Transmission Control Protocol)</li>
-        <li>File Transfer Protocol</li>
-    <li>HTTP(HyperText Transfer Protocol) </li>
-<li>FTP(File Transfer Protocol)</li></ol>
-      <li><h3>A web server is a computer software and underlying hardware that accepts requsts via HTTP. </h3></li>  
-    </ul>
-   </div>
+            <ol><li>TCP(Transmission Control Protocol)</li>
+                <li>File Transfer Protocol</li>
+                <li>HTTP(HyperText Transfer Protocol) </li>
+                <li>FTP(File Transfer Protocol)</li></ol>
+                <li><h3>A web server is a computer software and underlying hardware that accepts requsts via HTTP. </h3></li>  
+                <li><h3> Websites typically use HTML to format and present information and to provide navigational facilities that make it easy for the user to move within the site and around the web.</h3></li>
+            </ul>
+           <a href="/a.html">
+            <h2>Differnce between Web Development and App Development.</h2>
+           </a>
+        </div>
+        <div class="commands">
+         <h1>Git Commands</h1>
+         <ol>
+             <li><h3>git add- used to adds a file to the staging area.</h3></li>
+             <li><h3>git init- used to start a new repository.</h3></li>
+             <li><h3>git clone- used to obtain a repository from an existing URL.</h3></li>
+             <li><h3>git commit- used to commit any files you have added with the git add command and also commits any file you have changed.</h3></li>
+             <li><h3>git status- used to lists all the files that have to be committed.</h3></li>
+             <li><h3>git branch- used to lists all the local branches in the current repository.</h3></li>
+             <li><h3>git push- used to sends the committed changes of master branch to your remote repository. </h3></li>
+             <li><h3>git config- used to set the author name and email address respectively to be used with your commits.</h3></li>
+         </ol>
+         <a href="e.html"><h2>Steps for pushing file in github using git commands.</h2></a>
+        </div>
    <div class="api">
     <h1>API/JSON</h1>
     <ul>
@@ -96,6 +51,28 @@
 <li><h3>JSON is often used when the data is sent from a server to a web page.</h3></li>
 <li><h3>JSON (JavaScript Object Notation) API is an application programming interface designed for lightweight data interchange (text-based data exchange format) between two computer applications operating on the same hardware device or between different computers in different geographical areas.</h3></li>
 <li><h3>The user and the server send a data request in the API. The API then designates how the data will be called using the GET method and the affiliated links shared.</h3></li>
+   </div>
+   <div class="keywords">
+    <h1>let,var,const</h1>
+       <ol>
+        <li><h3>let: create variables that can be reassigned another value.</h3></li>
+<li><h3>var: can have a global or local scope.
+ Global scope is for variables declared outside functions, while local scope is for variables declared inside functions.</h3></li>
+<li><h3>const: creates "constant" variables that cannot be reassigned another value.</h3></li>
+       </ol>
+       <a href="b.html"><h2>Programs of let,var and const</h2></a>
+       <a href="c.html"><h2>Programs of if-else statement using let,var and const</h2></a>
+       <a href="d.html"><h2>Programs of loop using let,var and const</h2></a>
+       <a href="f.html"> <h2>Programs of array</h2></a>
+   </div>
+   <div class="content">
+    <h1>Drive Principle in JS: </h1>
+    <ol>
+        <li><h3>The driver principle in JavaScript is a design principle that states that a function should only have one reason to change. This means that a function should only be responsible for a single task, and that task should be well-defined and cohesive. </h3></li>
+        <li><h3> It is used to reduce the amount of code that is repeated in a program .</h3></li>
+         <li><h3> It is based on the idea that if a piece of code that can be reused, it shouldbe rather than being written again. </h3> </li>
+         <li><h3>The driver principle is important because it helps to keep code clean, maintainable, and extensible. When a function has only one reason to change, it is easier to understand and to modify. This is especially important in large codebases, where it can be difficult to track down the source of a bug.</h3> </li>
+        </ol>
    </div>
 </body>
 </html>

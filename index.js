@@ -1,1 +1,0 @@
-alert("pop up message will be appeared");
